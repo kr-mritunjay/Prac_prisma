@@ -14,11 +14,25 @@ const Prisma = new client_1.PrismaClient();
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         // writing queries here.....
-        yield Prisma.users.create({
-            data: {
-                email: "mritunjaykr160@gmail.com",
-                name: "mritunjay",
-            },
+        yield Prisma.users.createMany({
+            data: [
+                {
+                    email: "mritunjaykr10@gmail.com",
+                    name: "mritunjay",
+                },
+                {
+                    email: "ashwanikr160@gmail.com",
+                    name: "ashwani",
+                },
+                {
+                    email: "ankitkumar@gmail.com",
+                    name: "ankit",
+                },
+                {
+                    email: "ayushkumar@gmail.com",
+                    name: "ayush",
+                },
+            ],
         });
     });
 }
